@@ -26,4 +26,4 @@ Moving forward, we made a night halt at village Raiwind. Subsequently, traveling
 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1zAlU3VCauYFlshu3owtZlRW2yttaPJ4&ehbc=2E312F" width="1000" height="600"></iframe>
 
-![Rabindar Singh with his grandchildren](../images/dad.png)
+![Rabindar Singh with his grandchildren](/my_web/articles/images/dad.png)
