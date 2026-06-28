@@ -1,0 +1,154 @@
+/* ==========================================================================
+   Minimal Full-Width Stylesheet (Fluid Layout, Edge-to-Edge)
+   ========================================================================== */
+
+/* Reset & Box-Sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px 40px; /* Padding keeps text safe from the literal screen edge */
+    background-color: #faf8f5; 
+    color: #2b2b2b;
+    font-family: "Times New Roman", Times, Georgia, serif;
+    font-size: 12pt;
+    line-height: 1.6;
+}
+
+/* Fluid Layout Constraints */
+body > header, 
+body > main, 
+body > footer {
+    width: 100%;
+    margin: 0;   
+}
+
+/* Header Tweaks */
+header {
+    margin-top: 20px;
+    margin-bottom: 35px;
+    border-bottom: 1px double #8c8c8c;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 22pt;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    color: #111111;
+}
+
+.subtitle {
+    font-style: italic;
+    margin: 0;
+    color: #555555;
+    font-size: 11pt;
+}
+
+/* Headings Configuration (Handles Markdown H1, H2, H3 Rendered Elements) */
+article h1, article h2, article h3, section h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #1a3a5f; 
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+article h1 { font-size: 18pt; border-bottom: 1px solid #d1d1d1; padding-bottom: 5px; }
+article h2, section h2 { font-size: 15pt; border-left: 3px solid #1a3a5f; padding-left: 10px; }
+article h3 { font-size: 13pt; color: #333333; }
+
+p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Lists Styling (Markdown bullet points) */
+article ul, article ol {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+
+article li {
+    margin-bottom: 6px;
+}
+
+/* Directory Index Listing Layout */
+.directory-note {
+    font-style: italic;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+.topic-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.topic-item {
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    border-bottom: 1px dashed #d1d1d1;
+}
+
+.topic-item:last-child {
+    border-bottom: none;
+}
+
+/* Hyperlink Styling */
+.topic-link {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+.topic-title {
+    display: block;
+    font-size: 13pt;
+    font-weight: bold;
+    color: #b13434; 
+    text-decoration: underline;
+}
+
+.topic-link:hover .topic-title {
+    color: #801f1f;
+    background-color: #f0ede6;
+}
+
+.topic-desc {
+    display: block;
+    font-size: 11pt;
+    color: #444444;
+    margin-top: 4px;
+    line-height: 1.4;
+}
+
+/* Responsive Image Layout Blocks inside Markdown */
+article img {
+    max-width: 100%;    
+    height: auto;       
+    display: block;
+    margin: 30px 0;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+}
+
+/* Footer Accent */
+footer {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    border-top: 1px double #8c8c8c;
+}
+
+footer p {
+    font-size: 10pt;
+    color: #777777;
+    text-align: left;
+}

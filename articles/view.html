@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notebook Viewer</title>
+    <!-- Relative link pointing up one level to find your main stylesheet -->
+    <link rel="stylesheet" href="../style.css">
+    
+    <!-- Mini translation engine to render Markdown text instantly -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1 id="article-title">Loading Directory...</h1>
+        <nav style="margin-top: 15px;">
+            <a href="../index.html" style="color: #b13434; font-weight: bold; text-decoration: underline;">&larr; Back to Home Directory</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Converted Markdown HTML drops cleanly right inside this article element -->
+        <article id="content-area"></article>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <nav style="margin-bottom: 15px;">
+            <a href="../index.html" style="color: #b13434; text-decoration: underline;">&larr; Return to Main Directory</a>
+        </nav>
+        <p>&copy; 2026. Built with pure semantic HTML & CSS.</p>
+    </footer>
+
+    <!-- Content Fetch & Render Core -->
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const postName = urlParams.get('post');
+
+        if (postName) {
+            // Converts file name query strings dynamically into cleanly cased page banners
+            const cleanTitle = postName.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+            document.getElementById('article-title').innerText = cleanTitle;
+
+            // Fetch the specific markdown file from your text subfolder
+            fetch(`text/${postName}.md`)
+                .then(response => {
+                    if (!response.ok) throw new Error('File not found');
+                    return response.text();
+                })
+                .then(markdownText => {
+                    // Inject fully processed semantic HTML nodes directly into the DOM
+                    document.getElementById('content-area').innerHTML = marked.parse(markdownText);
+                })
+                .catch(err => {
+                    document.getElementById('content-area').innerHTML = `<p style="color:red; font-style:italic;">Log not found. Ensure "articles/text/${postName}.md" exists in your GitHub repository.</p>`;
+                });
+        } else {
+            document.getElementById('article-title').innerText = "No Log Specified";
+        }
+    </script>
+</body>
+</html>
