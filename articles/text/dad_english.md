@@ -1,6 +1,11 @@
 03 to 09 Dec. 2020
-Punjab Mail USA
+
+Punjab Mail USA (translated)
+
+Edited by Sartvir Singh Chanian
+
 ## Hazratnama: S. Rabindar Singh Marok Advocate
+## Partition Horrors
 
 **Yes, respected ones**, I am Rabindar Singh, Advocate, currently residing in Jalandhar(Punjab,India). Actually, our ancestral village is Jahangir Tehsil of District Tarn Taran(Punjab, India). Around the year 1900, when the Bars (canal colonies) were opened, my great-grandfather Sardar Gulab Singh Marok and his sons Baba Ji Sardar Arur Singh and Sardar Mal Singh moved and settled in village Chak No. 253 R.B. (Rakh Branch), Tehsil and District Lyallpur(Punjab, now in Pakistan), because they were allotted 1 murabba (approx. 25 acres) each by the British government. This Chak had a large majority of people who had migrated from Jahangir (on the now Indian side), which is why this Chak also came to be named Jahangir. Initially, this area was inhabited by the native Jangli people, who would not allow the village to be established. For a long time, conflict and skirmishes continued. Eventually, they shifted to one side and established a separate settlement. My grandfather Sardar Arur Singh Ji had four sons, born in this order: Atma Singh, Kesar Singh, Hakam Singh, and Jawand Singh. All of them were born there in the Bar. I was born to Jawand Singh on August 15, 1932. Besides my grandfather Sardar Arur Singh, Amar Singh, Inder Singh, and Santa Singh were the Nambardars (village headmen) of the village. Adjoining our village, there was another smaller (village, also called) Jahangir, which people colloquially used to call Luchgarh. Other neighboring villages included Dhaliwal, Nurpur, Nawan Pind, Kang, and Badhala (all now in Pakistan). The vast majority of the population belonged to the Sikh agrarian community. Some working-class families (kamis) from various communities were also part of it, including Boor Singh from Kapurthala on this (Indian) side, who was Lal Singh's nephew, and Khurshid and Allah Ditta, who were Muslims and worked as blacksmiths.
 
